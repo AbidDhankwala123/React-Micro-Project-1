@@ -1,0 +1,81 @@
+.form-container{
+    height: 100vh;
+    display: flex;
+}
+
+.img{
+    width: 30vw;
+}
+.rightside-part{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-expiry-dates{
+    display: flex;
+}
+section{
+    margin-bottom: 2rem;
+}
+section>label,div>label{
+    color: #404040;
+    font-family: var(--font-family-roboto);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.86px;
+}
+section>input,div>input{
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: 600;
+    outline: none;
+    letter-spacing: 1px;
+    border: 1px solid grey;
+}
+section>input::placeholder,div>input::placeholder{
+    color: #BBB9BC;
+    font-family: var(--font-family-inter);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+section>input{
+    width: 23.9rem;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+}
+.expiry-date{
+    margin-right: 1rem;
+}
+div>input{
+    padding-left: 10px;
+    width: 5.5rem;
+    height: 2.5rem;
+}
+#cvc{
+    width: 11rem;
+    height: 2.8rem;
+}
+.form{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-btn{
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+    background: #220930;
+    padding: 0.5rem 9rem;
+    font-family: var(--font-family-inter);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}

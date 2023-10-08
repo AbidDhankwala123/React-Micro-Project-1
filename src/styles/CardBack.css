@@ -1,0 +1,76 @@
+.card-back{
+    position: absolute;
+    bottom: 2rem;
+    left: 10rem; 
+    height: 15rem;
+    width: 27rem;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(#FFFFFF, #D9D9D9);
+}
+.black-strip{
+    position: relative;
+    top: 1.5rem;
+    height: 3.1rem;
+    background-color: black;
+}
+.gray-strip{ 
+    position: relative;
+    top: 2.8rem;
+    left: 2rem;
+    height: 2.5rem;
+    width: 23rem;
+    border-radius: 8px;
+    background: #ADB6BF;
+    padding: 5px 10px;
+}
+.cvc{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.cvc,.cvc::placeholder{
+    padding: 0px;
+    margin-top: -2px;
+    width: 22rem;
+    text-align: right;
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 3.5px;
+
+}
+.section-1,.section-2,.section-3{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.lines-container{
+    width: 20rem;
+    position: relative;
+    top: 4.5rem;
+    left: 4rem;
+}
+.lines{
+    height: 5px;
+    border-radius: 4px;
+    background: #AEB5BD;
+}
+.line1,.line12{
+    width: 7.1rem;
+}
+.line2,.line5,.line10,.line11{
+    width: 1.4rem;
+}
+.line3,.line4{
+    width: 1.2rem;
+}
+.line6{
+    width: 3.8rem;
+}
+.line7{
+    width: 2.9rem;
+}
+.line8,.line9{
+    width: 0.6rem;
+}

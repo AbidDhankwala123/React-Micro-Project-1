@@ -1,0 +1,68 @@
+.card-front{
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    height: 15rem;
+    width: 27rem;
+    border-radius: 0.7rem;
+    background-image: url("../assets/card-front.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circle-1{
+    position: absolute;
+    left: 2rem;
+    top: 1.3rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #FEFFFF;
+}
+.circle-2{
+    position: absolute;
+    left: 6rem;
+    top: 1.8rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.display-card-number{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 5rem;
+    width: 27rem;
+}
+.number,.month,.year{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.number,.number::placeholder{
+    color: #FFF;
+    font-family: var(--font-family-inter);
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.display-user-details{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 2rem;
+    width: 27rem;
+}
+.month,.month::placeholder,.year,.year::placeholder{
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 3.29px;
+}
+.month{
+    /* text-align: center; */
+    text-transform: uppercase;
+    /* border: 3px solid red; */
+    width: 15rem;
+}
