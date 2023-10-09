@@ -74,11 +74,16 @@ const Form = ({setData}) => {
             setExpiryDateMonth("");
             return true;
         }
+        else if(parseInt(expiryDateMonth) < 1 || parseInt(expiryDateMonth) > 12){
+            setErrorMonth("Month should be from 1 to 12");
+            setExpiryDateMonth("");
+            return true;
+        }
         else{
             for(let i =0;i<expiryDateMonth.length;i++){
                 let charCode = expiryDateMonth.charCodeAt(i);
                 if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122)) {
-                    setErrorMonth("Characters not allowed");
+                    setErrorMonth("Month must be numeric");
                     setExpiryDateMonth("");
                     return true;
 
@@ -103,7 +108,7 @@ const Form = ({setData}) => {
             for(let i =0;i<expiryDateYear.length;i++){
                 let charCode = expiryDateYear.charCodeAt(i);
                 if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122)) {
-                    setErrorYear("Characters not allowed");
+                    setErrorYear("Year must be numeric");
                     setExpiryDateYear("");
                     return true;
 
@@ -128,7 +133,7 @@ const Form = ({setData}) => {
             for(let i =0;i<CVCNumber.length;i++){
                 let charCode = CVCNumber.charCodeAt(i);
                 if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122)) {
-                    setErrorCVC("Characters not allowed"); 
+                    setErrorCVC("CVC must be numeric"); 
                     setCVCNumber("");
                     return true;
 
